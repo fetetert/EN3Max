@@ -107,15 +107,6 @@ path: ~/moonraker-timelapse
 origin: https://github.com/mainsail-crew/moonraker-timelapse.git
 managed_services: klipper moonraker
 
-[update_manager KlipperScreen]
-type: git_repo
-path: ~/KlipperScreen
-origin: https://github.com/KlipperScreen/KlipperScreen.git
-virtualenv: ~/.KlipperScreen-env
-requirements: scripts/KlipperScreen-requirements.txt
-system_dependencies: scripts/system-dependencies.json
-managed_services: KlipperScreen
-
 [timelapse]
 ##   Following basic configuration is default to most images and don't need
 ##   to be changed in most scenarios. Only uncomment and change it if your
@@ -127,7 +118,5 @@ managed_services: KlipperScreen
 ##   Directory where the temporary frames are saved
 #ffmpeg_binary_path: /usr/bin/ffmpeg
 ##   Directory where ffmpeg is installed
-
-
 
 # Crowsnest update_manager entry
